@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Saad Aouad</title>
+    <link>https://saadaouad.net/</link>
+    <description>Recent content on Saad Aouad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://saadaouad.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Go HUGO - Fast and flexible static site generator build with GoLang</title>
+      <link>https://saadaouad.net/post/go-hugo/</link>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://saadaouad.net/post/go-hugo/</guid>
+      <description>Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
+ Quick Start Step 1: Install Hugo  Homebrew, a package manager for macOS, can be installed from brew.sh. See install if you are running Windows etc.
+ brew install hugo  Verify installation:
+hugo version  Step 2: Create a New Site Create a new Hugo site in a folder named GoHugo</description>
+    </item>
+    
+    <item>
+      <title>Never stop learning</title>
+      <link>https://saadaouad.net/post/never-stop-learning/</link>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://saadaouad.net/post/never-stop-learning/</guid>
+      <description>Never stop learning They never show that, they never teach that in school, you get your degree and then you work from 9am to 5pm, you go to the home, No! Every good engineer, i guarantee you they go home, they work, they study, so that when it comes time to learn new things, they know all about it already. And that, to me, is my road to mastery for any sort of technology.</description>
+    </item>
+    
+  </channel>
+</rss>

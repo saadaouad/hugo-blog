@@ -1,0 +1,179 @@
+    <!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		<meta name="generator" content="Hugo 0.26" />
+		<title>Go HUGO - Fast and flexible static site generator build with GoLang &middot; Saad Aouad</title>
+		<link rel="shortcut icon" href="https://saadaouad.net/images/favicon.ico">
+		<link rel="stylesheet" href="https://saadaouad.net/css/style.css">
+		<link rel="stylesheet" href="https://saadaouad.net/css/highlight.css">
+		
+
+		
+		<link rel="stylesheet" href="https://saadaouad.net/css/monosocialiconsfont.css">
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://saadaouad.net/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://saadaouad.net/post'>Archive</a>
+	<a href='https://saadaouad.net/tags'>Tags</a>
+	<a href='https://saadaouad.net/about'>About</a>
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>
+                        Go HUGO - Fast and flexible static site generator build with GoLang
+                    </h1>
+                    <h2 class="headline">
+                    Oct 2, 2017 00:00
+                    · 285 words
+                    · 2 minutes read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    
+
+<blockquote>
+<p>Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.</p>
+</blockquote>
+
+<h3 id="quick-start"><strong>Quick Start</strong></h3>
+
+<h4 id="step-1-install-hugo"><strong>Step 1: Install Hugo</strong></h4>
+
+<blockquote>
+<p>Homebrew, a package manager for macOS, can be installed from brew.sh. See <a href="http://gohugo.io/getting-started/installing">install</a> if you are running Windows etc.</p>
+</blockquote>
+
+<pre><code>brew install hugo
+</code></pre>
+
+<p>Verify installation:</p>
+
+<pre><code>hugo version
+</code></pre>
+
+<h4 id="step-2-create-a-new-site"><strong>Step 2: Create a New Site</strong></h4>
+
+<p>Create a new Hugo site in a folder named GoHugo</p>
+
+<pre><code>hugo new site GoHugo
+</code></pre>
+
+<h4 id="step-3-add-a-theme"><strong>Step 3: Add a Theme</strong></h4>
+
+<p>Check <a href="https://themes.gohugo.io/">themes.gohugo.io</a> this is a list of themes to consider.
+This quickstart uses the beautiful <a href="https://themes.gohugo.io/hugo-tranquilpeak-theme/">Tranquilpeak theme</a>.</p>
+
+<pre><code>cd GoHugo;\
+git init;\
+git submodule add https://github.com/kakawait/hugo-tranquilpeak-theme.git themes/hugo-tranquilpeak-theme;\
+
+# Edit your config.toml configuration file
+# and add the Tranquilpeak theme.
+echo 'theme = &quot;hugo-tranquilpeak-theme&quot;' &gt;&gt; config.toml
+</code></pre>
+
+<h4 id="step-4-add-content"><strong>Step 4: Add Content</strong></h4>
+
+<pre><code>hugo new posts/my-first-post.md
+</code></pre>
+
+<h4 id="step-5-run-hugo-server"><strong>Step 5: Run Hugo server</strong></h4>
+
+<pre><code>hugo server -D
+# Or 
+hugo server
+
+## Example
+➜  hugo-static git:(master) hugo server        
+Started building sites ...
+Built site for language en:
+0 draft content
+0 future content
+0 expired content
+1 regular pages created
+10 other pages created
+0 non-page files copied
+1 paginator pages created
+0 tags created
+0 categories created
+total in 8 ms
+Watching for changes in /Users/saadaouad/hugo-static/{data,content,layouts,static,themes}
+Serving pages from memory
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+</code></pre>
+
+<h4 id="step-6-customize-your-site"><strong>Step 6: Customize your site</strong></h4>
+
+<p>Open up <code>config.toml</code> in any any text editor, and try to customize your web site like this:</p>
+
+<pre><code>baseURL = &quot;https://saadaouad.io/&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;My New Web Site Build With Hugo&quot;
+theme = &quot;hugo-tranquilpeak-theme&quot;
+</code></pre>
+
+<p>If you already have a domain ready, please set it to the <code>baseURL</code>, add your personal <code>title</code>, and you can also set the name of the <code>theme</code>.</p>
+
+<h5 id="happy-hacking"><strong>Happy hacking!</strong></h5>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+    <p class="small">
+    
+       © Copyright 2017 <i class="fa fa-heart" aria-hidden="true"></i> 
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://saadaouad.net/js/jquery-2.2.4.min.js"></script>
+<script src="https://saadaouad.net/js/main.js"></script>
+<script src="https://saadaouad.net/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>
