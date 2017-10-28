@@ -16,9 +16,9 @@ weight: 10
 > You don’t need to install or configure tools like Webpack or Babel...
 They are preconfigured and hidden so that you can focus just on the code!
 
-### **Getting Started**
+## **Getting Started**
 
-#### **Installation**
+### **Installation**
 
 ```
 npm install -g create-react-app
@@ -28,7 +28,7 @@ or
 yarn global add create-react-app
 ```
 
-#### **Create app**
+### **Create app**
 To create a new app make you sure to run
 
 ```
@@ -36,6 +36,29 @@ create-react-app my-app
 cd my-app
 ```
 
-Try to open the current folder in your editor, you should see the structure below.
+Try to open the current folder in your editor, you should see the initial structure below.
 
 <img src='https://i.imgur.com/sqejkoC.png' alt='Structure app'>
+
+### **Run app in development environment**
+
+```
+npm start
+```
+or 
+```
+yarn start
+```
+The app should be compiled successfully
+
+```
+Compiled successfully!
+
+You can now view my-app in the browser.
+
+  Local:            http://localhost:3000/
+  On Your Network:  http://192.168.1.150:3000/
+
+Note that the development build is not optimized.
+To create a production build, use yarn build.
+```
