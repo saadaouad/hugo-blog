@@ -32,7 +32,7 @@ hugo version
 
 Create a new Hugo site in a folder named GoHugo
 ```
-hugo new site GoHugo
+hugo new site go-hugo
 ```
 
 #### **Step 3: Add a Theme**
@@ -41,7 +41,7 @@ Check [themes.gohugo.io](https://themes.gohugo.io/) this is a list of themes to 
 This quickstart uses the beautiful [Tranquilpeak theme](https://themes.gohugo.io/hugo-tranquilpeak-theme/).
 
 ```
-cd GoHugo;\
+cd go-hugo;\
 git init;\
 git submodule add https://github.com/kakawait/hugo-tranquilpeak-theme.git themes/hugo-tranquilpeak-theme;\
 
@@ -62,7 +62,7 @@ hugo server -D
 hugo server
 
 ## Example
-➜  hugo-static git:(master) hugo server        
+➜  go-hugo git:(master) hugo server        
 Started building sites ...
 Built site for language en:
 0 draft content
@@ -75,7 +75,7 @@ Built site for language en:
 0 tags created
 0 categories created
 total in 8 ms
-Watching for changes in /Users/saadaouad/hugo-static/{data,content,layouts,static,themes}
+Watching for changes in /Users/saadaouad/go-hugo/{data,content,layouts,static,themes}
 Serving pages from memory
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
