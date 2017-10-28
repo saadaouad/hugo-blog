@@ -27,3 +27,15 @@ or
 ```
 yarn global add create-react-app
 ```
+
+#### **Create app**
+To create a new app make you sure to run
+
+```
+create-react-app my-app
+cd my-app
+```
+
+Try to open the current folder in your editor, you should see the structure below.
+
+<img src='https://i.imgur.com/sqejkoC.png' alt='Structure app'>
