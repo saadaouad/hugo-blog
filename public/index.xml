@@ -6,10 +6,22 @@
     <description>Recent content on Saad Aouad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://saadaouad.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Create React App</title>
+      <link>https://saadaouad.net/post/create-react-app/</link>
+      <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://saadaouad.net/post/create-react-app/</guid>
+      <description>You don’t need to install or configure tools like Webpack or Babel&amp;hellip; They are preconfigured and hidden so that you can focus just on the code!
+ Getting Started Installation npm install -g create-react-app  or
+yarn global add create-react-app  Create app To create a new app make you sure to run
+create-react-app my-app cd my-app  Try to open the current folder in your editor, you should see the initial structure below.</description>
+    </item>
     
     <item>
       <title>Go HUGO - Fast and flexible static site generator build with GoLang</title>
