@@ -62,3 +62,42 @@ You can now view my-app in the browser.
 Note that the development build is not optimized.
 To create a production build, use yarn build.
 ```
+>The page will automatically reload if you make changes to the code.
+
+### **Builds app for production**
+Builds the app for production to the `build` folder, using
+
+```
+npm run build
+```
+or 
+```
+yarn build
+```
+```
+➜  my-app yarn build
+yarn run v1.2.1
+warning You are using Node "7.7.1" which is not supported and may encounter bugs or unexpected behavior. Yarn supports the following semver range: "^4.8.0 || ^5.7.0 || ^6.2.2 || ^8.0.0"
+$ react-scripts build
+Creating an optimized production build...
+Compiled successfully.
+
+File sizes after gzip:
+
+  40.13 KB  build/static/js/main.cc499d2e.js
+  299 B     build/static/css/main.c17080f1.css
+
+The project was built assuming it is hosted at the server root.
+To override this, specify the homepage in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage" : "http://myname.github.io/myapp",
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  yarn global add serve
+  serve -s build
+
+✨  Done in 8.90s.
+```
