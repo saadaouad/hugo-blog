@@ -38,7 +38,27 @@ cd my-app
 
 Try to open the current folder in your editor, you should see the initial structure below.
 
-<img src='https://i.imgur.com/sqejkoC.png' alt='Structure app'>
+```
+my-app
+├── node_modules
+├── public
+│   └── favicon.ico
+│   └── index.html
+│   └── manifest.json
+└── src
+    └── App.css
+    └── App.js
+    └── App.test.js
+    └── index.css
+    └── index.js
+    └── logo.svg
+    └── registerServiceWorker.js
+├── .gitignore
+├── package.json
+├── README.md
+├── yarn.lock
+
+```
 
 ### **Run app in development environment**
 
