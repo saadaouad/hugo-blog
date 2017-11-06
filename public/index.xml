@@ -6,10 +6,19 @@
     <description>Recent content on Saad Aouad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://saadaouad.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What is Redux</title>
+      <link>https://saadaouad.net/post/what-is-redux/</link>
+      <pubDate>Sun, 05 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://saadaouad.net/post/what-is-redux/</guid>
+      <description>Redux is a JavaScript library that aims to simplify how we manage stateful data. Redux keeps all the data in a single JS object called store. A single function, the reducer, is responsible for making modifications to the store. We trigger the reducer by dispatching an action - a JS object that describes how our data should change. The reducer function receives the action as an argument and makes changes accordingly.</description>
+    </item>
     
     <item>
       <title>Create React App</title>
