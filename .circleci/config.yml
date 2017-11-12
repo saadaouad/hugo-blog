@@ -5,5 +5,4 @@ jobs:
       - image: golang:1.8
     steps:
       - checkout
-      - name: deploy to production
       - run: echo "hello world"
