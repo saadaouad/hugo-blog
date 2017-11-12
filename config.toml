@@ -2,3 +2,36 @@ baseURL = "https://saadaouad.net/"
 languageCode = "en-us"
 title = "Saad Aouad"
 theme = "hugo-theme-cactus-plus"
+
+[params]
+	# Navigation links
+	home = ""
+	about = ""
+	archive = ""
+	subscribe = ""
+	tags = ""
+	# Pagination links
+	olderPosts = ""
+	newerPosts = ""
+	readMore = ""
+	copyright = ""
+	# Sharing options and author information in posts
+	aboutAuthor = "I am so interesting."
+	tweet = ""
+	share = ""
+	# 404 page
+	title404 = ""
+	subtitle404 = ""
+
+	# Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
+	iconFont = "font-awesome"
+    # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
+    socialIconStyle = ""
+
+
+    # Add additional social link entries underneath
+    [social]
+	facebook-square = "https://web.facebook.com/saad.aouad"
+    linkedin-square = "https://www.linkedin.com/in/saad-aouad-919897b5/"
+    twitter-square = "https://twitter.com/AouadSaad"
+    github-square = "https://github.com/saadaouad"
