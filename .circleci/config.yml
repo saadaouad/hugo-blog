@@ -1,8 +1,11 @@
 version: 2
 jobs:
-   build:
-     docker:
-       - image: golang:1.8
-     steps:
-       - checkout
-       - run: echo "hello world"
+  build:
+    docker:
+      - image: golang:1.8
+    steps:
+      deploy:
+        production:
+        branch: master
+        commands:
+          - firebase deploy --token="1/BiFdkCtzGAeT3ShPMSK_y2A7-coIiy3eTKfHCvlR3u6tgd96zEG1bvhfD-hRkYj4" --non-interactive
