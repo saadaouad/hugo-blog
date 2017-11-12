@@ -6,7 +6,6 @@ jobs:
      steps:
        - checkout
        - run: echo "hello world"
-
     deployment:
       production:
         branch: master
