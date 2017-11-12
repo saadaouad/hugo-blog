@@ -6,6 +6,6 @@ jobs:
     steps:
       - checkout
       - deploy:
-          name: deploy to production
-          commands:
-            - firebase deploy --token="1/BiFdkCtzGAeT3ShPMSK_y2A7-coIiy3eTKfHCvlR3u6tgd96zEG1bvhfD-hRkYj4" --non-interactive
+        name: deploy to production
+        - run: echo "hello world"
+        
