@@ -1,7 +1,6 @@
-version: 2
-  jobs:
-    docker:
-      - image: golang:1.9.2
-    steps:
-      - name: Deploy Master to Firebase
+deploy-job:
+  docker:
+    - image: golang:1.9.2
+  steps:
+    - name: Deploy Master to Firebase
   
