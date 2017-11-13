@@ -8,3 +8,4 @@ jobs:
       - checkout
       - run: 
           name: "Run Hugo"
+          command: HUGO_ENV=production hugo -v -s /go/src/github.com/saadaouad/hugo-blog
