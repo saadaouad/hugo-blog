@@ -3,9 +3,8 @@ jobs:
   build:
     docker:
       - image: golang:1.9.2
-    working_directory: ~/public
+    working_directory: /go/src/github.com/saadaouad/hugo-blog
     steps:
       - checkout
       - run: 
           name: "Run Hugo"
-          command: HUGO_ENV=production hugo -v -s ~/public
