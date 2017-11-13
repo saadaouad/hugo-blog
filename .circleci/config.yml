@@ -3,7 +3,9 @@ jobs:
   build:
     docker:
       - image: golang:1.9.2
+    working_directory: ~/public
     steps:
       - checkout
-      - run: echo "hello world"
-    working_directory: ~/public
+      - run: 
+          name: "Run Hugo"
+          command: HUGO_ENV=production hugo -v -s ~/public
