@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: golang:1.9.2
+    working_directory: ~/
     steps:
       - checkout
       - run: echo "hello world"
