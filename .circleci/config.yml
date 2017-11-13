@@ -1,21 +1,5 @@
-deploy-job:
-  docker:
-    - image: golang:1.8
-  working_directory: /
-  steps:
-    - run:
-      name: Deploy Master to Firebase
-      command: ./node_modules/.bin/firebase deploy --token="1/7Dqi52BFe8w4b1LWbKDXq9KeUVFLn6TB48p23Q6KdA8"
-               
-workflows:
-  version: 2
-
-  -deploy:
-    jobs:
-      - build-job
-      - deploy-job:
-        requires:
-          - build-job
-        filters:
-          branches:
-          only: master
+version: 2
+jobs:
+  build:
+    docker:
+      - image: felicianotech/docker-hugo:0.21
