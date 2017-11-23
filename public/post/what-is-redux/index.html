@@ -43,7 +43,7 @@
                     </h1>
                     <h2 class="headline">
                     Nov 5, 2017 00:00
-                    · 95 words
+                    · 114 words
                     · 1 minute read
                       <span class="tags">
                       
@@ -52,7 +52,10 @@
                 </header>
                 
                 <section id="post-body">
-                    <p><a href="https://github.com/reactjs/redux/">Redux</a> is a JavaScript library that aims to simplify how we manage stateful data. Redux keeps all the data in a single JS object called <code>store</code>. A single function, the <code>reducer</code>, is responsible for making modifications to the <code>store</code>. We trigger the reducer by <code>dispatching</code> an <code>action</code> - a JS object that describes how our data should change. The <code>reducer</code> function receives the <code>action</code> as an argument and makes changes accordingly. Other parts of the code (usually React Components) can subscribe to data in the <code>store</code>. When data changes, Redux notifies subscribers of the change.</p>
+                    <p><a href="https://github.com/reactjs/redux/">Redux</a> is a JavaScript library that aims to manage stateful data.
+The <code>state</code> of your whole application is stored in a single JS object called <code>store</code>. A single function, the <code>reducer</code>, is responsible for making modifications to the <code>store</code>. We trigger the reducer by <code>dispatching</code> an <code>action</code>, a JS object that describes how our data should change. The <code>reducer</code> function receives the <code>action</code> as an argument and makes changes accordingly. Other parts of the code (usually React Components) can subscribe to data in the <code>store</code>. When data changes, Redux notifies subscribers of the change.</p>
+
+<p><strong>PS</strong>: The <code>reducer</code> is a pure function that takes the <strong><em>previous</em></strong> <code>state</code> and an <code>action</code>, and returns the <strong><em>next</em></strong> <code>state</code>.</p>
 
                 </section>
             </article>

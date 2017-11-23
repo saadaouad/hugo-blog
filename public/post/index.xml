@@ -17,7 +17,7 @@
       <pubDate>Sun, 05 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://saadaouad.net/post/what-is-redux/</guid>
-      <description>Redux is a JavaScript library that aims to simplify how we manage stateful data. Redux keeps all the data in a single JS object called store. A single function, the reducer, is responsible for making modifications to the store. We trigger the reducer by dispatching an action - a JS object that describes how our data should change. The reducer function receives the action as an argument and makes changes accordingly.</description>
+      <description>Redux is a JavaScript library that aims to manage stateful data. The state of your whole application is stored in a single JS object called store. A single function, the reducer, is responsible for making modifications to the store. We trigger the reducer by dispatching an action, a JS object that describes how our data should change. The reducer function receives the action as an argument and makes changes accordingly. Other parts of the code (usually React Components) can subscribe to data in the store.</description>
     </item>
     
     <item>
