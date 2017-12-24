@@ -4,9 +4,14 @@ title = "Saad Aouad"
 theme = "hugo-theme-cactus-plus"
 
 [params]
+	# Add custom assets with their paths relative to the static folder
+	customCSS = []
+	customJS  = []
+
 	# Navigation links
 	home = ""
 	about = ""
+	resume = ""
 	archive = ""
 	subscribe = ""
 	tags = ""
