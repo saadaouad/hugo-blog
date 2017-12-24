@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Saad Aouad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://saadaouad.net/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Want to build a successful web app?</title>
+      <link>https://saadaouad.net/post/getting-real/</link>
+      <pubDate>Sun, 24 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://saadaouad.net/post/getting-real/</guid>
+      <description>It’s time to Get Real. Getting Real is a smaller, faster, better way to build software.
+Getting real is about skipping all the stuff that represents real (charts, graphs, boxes, arrows, schematics, wireframes, etc.) and actually building the real thing.
+Getting real is less. Less mass, less software, less features, less paperwork, less of everything that&amp;rsquo;s not essential (and most of what you think is essential actually isn&amp;rsquo;t).
+Getting real is staying small and being agile.</description>
+    </item>
     
     <item>
       <title>What is Redux</title>
