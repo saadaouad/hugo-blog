@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Saad Aouad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://saadaouad.net/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Quote on design</title>
+      <link>https://saadaouad.net/post/quote-on-design/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://saadaouad.net/post/quote-on-design/</guid>
+      <description>“Good designers copy; great designers steal.” – Pablo Picasso Source article</description>
+    </item>
     
     <item>
       <title>Want to build a successful web app?</title>
