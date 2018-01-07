@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://saadaouad.net/post/quotes-on-design/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://saadaouad.net/post/getting-real/</loc>
     <lastmod>2017-12-24T00:00:00+00:00</lastmod>
   </url>
@@ -49,13 +44,13 @@
   
   <url>
     <loc>https://saadaouad.net/post/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://saadaouad.net/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
