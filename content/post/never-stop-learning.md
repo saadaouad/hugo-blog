@@ -17,3 +17,5 @@ weight: 10
 
 They never show that, they never teach that in school, you get your degree and then you work from 9am to 5pm, you go to the home, No! Every good engineer, i guarantee you they go home, they work, they study, so that when it comes time to learn new things, they know all about it already.
 And that, to me, is my road to mastery for any sort of technology.
+
+***"The more I learn, the more I realize how much I don't know."*** - Albert Einstein
