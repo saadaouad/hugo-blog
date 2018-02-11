@@ -84,6 +84,20 @@ To create a production build, use yarn build.
 ```
 >The page will automatically reload if you make changes to the code.
 
+### **Runs test using Jest**
+Runs the test watcher using Jest.
+By default, runs the tests related to files changed since the last commit.
+
+```
+npm test
+```
+or
+```
+yarn test
+```
+
+[Read more about how this working](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#running-tests)
+
 ### **Builds app for production**
 Builds the app for production to the `build` folder, using
 
