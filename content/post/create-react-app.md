@@ -85,8 +85,9 @@ To create a production build, use yarn build.
 >The page will automatically reload if you make changes to the code.
 
 ### **Runs test using Jest**
-Runs the test watcher using Jest.
-By default, runs the tests related to files changed since the last commit.
+Runs test watcher using Jest.
+
+By default, runs tests related to files changed since the last commit.
 
 ```
 npm test
