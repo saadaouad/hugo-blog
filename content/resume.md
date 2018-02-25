@@ -16,6 +16,6 @@ ISGI-OFPPT, Technician specialized in IT-development.
 ### **Work Experience**
 
 ### ***September/2016 - Current***
-Front-End Developer at JoinCoded, Kuwait (Working remotely).
+Front-End Developer at [Barmej](https://www.barmej.com/), Kuwait.
 ### ***December/2015 - August/2016***
-Front-End Developer at OBytes, Morocco.
+Front-End Developer at [OBytes](https://www.obytes.com/), Morocco.
