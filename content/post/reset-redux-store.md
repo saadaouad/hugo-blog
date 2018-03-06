@@ -23,3 +23,31 @@ const todoApp = combineReducers({
   /* your app’s top-level reducers */
 })
 ```
+
+You can write a `rootReducer` delegating to it:
+
+```
+const todoApp = combineReducers({
+  /* your app’s top-level reducers */
+})
+
+const rootReducer = (state, action) => {
+  return todoApp(state, action)
+}
+```
+
+Now we just need to inform the `rootReducer` to return the initial state after `SIGN_OUT_COMPLETE` action. As we know, reducers are supposed to return the initial state when they are called with `undefined` as the first argument.✨
+
+```
+const todoApp = combineReducers({
+  /* your app’s top-level reducers */
+})
+
+const rootReducer = (state, action) => {
+  if (action.type === 'SIGN_OUT_COMPLETE') {
+    state = undefined
+  }
+
+  return todoApp(state, action)
+}
+```
