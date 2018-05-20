@@ -6,10 +6,21 @@
     <description>Recent content on Saad Aouad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://saadaouad.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Upload file using redux-form</title>
+      <link>https://saadaouad.net/post/redux-form-file-upload/</link>
+      <pubDate>Tue, 08 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://saadaouad.net/post/redux-form-file-upload/</guid>
+      <description>This example demonstrates how i can upload a file and update his value using redux-form.
+If you&amp;rsquo;ve setting up redux-form with an input type=&amp;quot;file&amp;quot;, you should have encountered a browser error like the following error on Chrome:
+Uncaught DOMException: Failed to set the &#39;value&#39; property on &#39;HTMLInputElement&#39;: This input element accepts a filename, which may only be programmatically set to the empty string.  For a security reasons, input with type=&amp;quot;file&amp;quot; don&amp;rsquo;t support setting the value property programmatically, ref https://developer.</description>
+    </item>
     
     <item>
       <title>Reset Redux Store</title>
