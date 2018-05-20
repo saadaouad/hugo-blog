@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://saadaouad.net/post/redux-form-file-upload/</loc>
+    <lastmod>2018-05-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://saadaouad.net/post/reset-redux-store/</loc>
     <lastmod>2018-02-26T00:00:00+00:00</lastmod>
   </url>
@@ -49,13 +54,13 @@
   
   <url>
     <loc>https://saadaouad.net/post/</loc>
-    <lastmod>2018-02-26T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://saadaouad.net/</loc>
-    <lastmod>2018-02-26T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
