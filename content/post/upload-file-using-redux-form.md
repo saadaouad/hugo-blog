@@ -43,8 +43,8 @@ export const updateUserProfile = values => dispatch => {
   const data = new FormData();
 
   // Don't send the data until a file has been loaded
-  if (typeof values.photo !== 'string' && values.photo !== null) {
-    data.append('photo', values.photo[0]);
+  if (typeof values.picture !== 'string' && values.picture !== null) {
+    data.append('picture', values.picture[0]);
   }
 
   dispatch({
