@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Saad Aouad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://saadaouad.net/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Know your personal information dashboard for your terminal</title>
+      <link>https://saadaouad.net/post/personal-information-dashboard/</link>
+      <pubDate>Sun, 10 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://saadaouad.net/post/personal-information-dashboard/</guid>
+      <description>WTFutil is a personal terminal based dashboard utility, designed for displaying important and daily data.
+Quick start  This tool is only compatible with Go versions 1.9.2 or later. It currently does not compile with gccgo.
+ ➜ ~ go get -u github.com/senorprogrammer/wtf ➜ ~ cd go/src/github.com/senorprogrammer/wtf ➜ wtf make install ➜ wtf git:(master) make run go build -o bin/wtf bin/wtf ┌──────────── World Clocks ────────────┐┌─────────────── System ───────────────┐ │ ││ Built: parsing time &amp;quot;dev&amp;quot; as &amp;quot;2006-│ │ Avignon 19:41 CEST Jun 10 ││ Vers: dev │ │ Barcelona 19:41 CEST Jun 10 ││ │ │ Dubai 21:41 +04 Jun 10 ││ OS: 10.</description>
+    </item>
     
     <item>
       <title>Upload file using redux-form</title>
