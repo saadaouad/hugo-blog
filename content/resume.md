@@ -15,7 +15,7 @@ ISGI-OFPPT, Technician specialized in IT-development.
 
 ### **Work Experience**
 
-### ***September/2016 - Current***
+### ***September/2017 - Current***
 Front-End Developer at [Barmej](https://www.barmej.com/), Kuwait.
-### ***December/2015 - August/2016***
+### ***June/2016 - August/2017***
 Front-End Developer at [OBytes](https://www.obytes.com/), Morocco.
