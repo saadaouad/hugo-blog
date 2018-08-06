@@ -25,9 +25,11 @@ Refused to frame 'https://disqus.com/' because it violates the following Content
 
 For resolving this issue, you have to add some url's to configure here:
 
+```
 https://disqus.com
 https://*.disqus.com
 https://*.disquscdn.com
+```
 
 As shown below.
 
