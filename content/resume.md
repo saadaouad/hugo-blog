@@ -4,7 +4,14 @@ title = "Resume"
 hidden = true
 +++
 
-### **Education/Qualifications**
+### **Work Experience**:
+
+### ***September/2017 - Current***
+Front-End Developer at [Barmej](https://www.barmej.com/), Kuwait.
+### ***June/2016 - August/2017***
+Front-End Developer at [OBytes](https://www.obytes.com/), Morocco.
+
+### **Education/Qualifications**:
 
 ### ***2014-2015***
 Graduate school of management (ESG), Master 1 of information systems management, information systems.
@@ -12,10 +19,3 @@ Graduate school of management (ESG), Master 1 of information systems management,
 Graduate school of management (ESG), License in information systems management, information systems.
 ### ***2011-2013*** 
 ISGI-OFPPT, Technician specialized in IT-development.
-
-### **Work Experience**
-
-### ***September/2017 - Current***
-Front-End Developer at [Barmej](https://www.barmej.com/), Kuwait.
-### ***June/2016 - August/2017***
-Front-End Developer at [OBytes](https://www.obytes.com/), Morocco.
