@@ -7,9 +7,9 @@ hidden = true
 ### **Work Experience**:
 
 ### ***September/2017 - Current***
-Front-End Developer at [Barmej](https://www.barmej.com/), Kuwait.
+Front-End Developer at <a href="https://www.barmej.com/" target="_blank" rel="noopener noreferrer">Barmej</a>, Kuwait.
 ### ***June/2016 - August/2017***
-Front-End Developer at [OBytes](https://www.obytes.com/), Morocco.
+Front-End Developer at <a href="https://www.obytes.com/" target="_blank" rel="noopener noreferrer">OBytes</a>, Morocco.
 
 ### **Education/Qualifications**:
 
