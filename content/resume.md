@@ -1,8 +1,8 @@
-+++
-date = "2017-12-24"
-title = "Resume"
-hidden = true
-+++
+---
+date: "2017-12-24"
+title: "Resume"
+hidden: true
+---
 
 ### **Work Experience**:
 
