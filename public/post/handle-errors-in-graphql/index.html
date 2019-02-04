@@ -8,7 +8,7 @@
 		
 		
 		<meta name="generator" content="Hugo 0.53" />
-		<title>Allowing access to all Disqus resources &middot; Saad Aouad</title>
+		<title>Handle and inspect errors in GraphQL network stack &middot; Saad Aouad</title>
 		<link rel="stylesheet" href="https://saadaouad.net/css/style.css">
 		<link rel="stylesheet" href="https://saadaouad.net/css/highlight.css">
 
@@ -40,11 +40,11 @@
             <article>
                 <header>
                     <h1>
-                        Allowing access to all Disqus resources
+                        Handle and inspect errors in GraphQL network stack
                     </h1>
                     <h2 class="headline">
-                    Aug 6, 2018 00:00
-                    · 119 words
+                    Feb 4, 2019 00:00
+                    · 186 words
                     · 1 minute read
                       <span class="tags">
                       
@@ -53,26 +53,44 @@
                 </header>
                 
                 <section id="post-body">
-                    <p>In this post we will see how we can allowing access to all Disqus resources when you have a <code>Content Security Policy</code> header in your web application.</p>
+                    <p>In any application it&rsquo;s important to handle and inspect erros from server and client sides, since this can help a lot to debug and check what happened exactly on your app. Today we will see how we can handle errors in GraphQL especially from client side using <a href="https://www.apollographql.com/docs/react/" target="_blank">react apollo</a>.</p>
 
-<p>To have a secured web application, you have to add some HTTP headers with security policies, ref <a href="https://content-security-policy.com/">https://content-security-policy.com/</a>.</p>
+<p>When using Apollo Link, the best way to handle errors is to use <code>apollo-link-error</code> to handle Graphql, network and server errors:</p>
 
-<p>And if you are using Disqus in your web application, Disqus will not be loaded when your app it&rsquo;s deployed and you should see an error in the console like:</p>
+<pre><code>import {ApolloLink} from 'apollo-link';
+import { onError } from &quot;apollo-link-error&quot;;
+import {createHttpLink} from 'apollo-link-http';
+import {InMemoryCache} from 'apollo-cache-inmemory';
 
-<pre><code>Refused to frame 'https://disqus.com/' because it violates the following Content Security Policy directive: &quot;frame-src 'self' ...
+const errorLink = onError(({networkError, graphQLErrors}) =&gt; {
+    if (graphQLErrors) {
+        graphQLErrors.map(({message, locations, path}) =&gt;
+            console.log(`[GraphQL error]: Message: ${message}, Location: ${locations}, Path: ${path}`);
+        );
+    }
+
+    if (networkError)
+        console.log(`[Network error]: ${networkError}`);
+    });
+
+    const httpLink = createHttpLink({
+        uri: YOUR_GRAPHQL_ENDPOINT,
+    });
+
+    const link = ApolloLink.from([errorLink, httpLink]);
+
+    client = new ApolloClient({
+        cache: new InMemoryCache(),
+        link,
+    })
 </code></pre>
 
-<p>For resolving this issue, you have to add some url&rsquo;s to configure here:</p>
+<ul>
+<li><code>graphQLErrors</code>: Is an array of errors from the GraphQL endpoint</li>
+<li><code>networkError</code>: This refer any error during the link execution or server response</li>
+</ul>
 
-<pre><code>https://disqus.com
-https://*.disqus.com
-https://*.disquscdn.com
-</code></pre>
-
-<p>As shown below.</p>
-
-<pre><code>&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src 'self' 'unsafe-inline' https://disqus.com https://*.disqus.com https://*.disquscdn.com ;&quot;&gt;
-</code></pre>
+<p>And finally if you are enthusiastic to know how you can handle GraphQL errors from server side as well, here is a good reference <a href="https://blog.apollographql.com/full-stack-error-handling-with-graphql-apollo-5c12da407210">https://blog.apollographql.com/full-stack-error-handling-with-graphql-apollo-5c12da407210</a></p>
 
                 </section>
             </article>
