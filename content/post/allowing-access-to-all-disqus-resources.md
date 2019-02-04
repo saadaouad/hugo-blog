@@ -13,7 +13,7 @@ description: In this post we must see how we can allowing access to all Disqus r
 weight: 10
 ---
 
-In this post we must see how we can allowing access to all Disqus resources when you have a `Content Security Policy` header in your web application.
+In this post we will see how we can allowing access to all Disqus resources when you have a `Content Security Policy` header in your web application.
 
 To have a secured web application, you have to add some HTTP headers with security policies, ref https://content-security-policy.com/.
 

@@ -13,7 +13,7 @@ weight: 10
 ---
 
 
-> You don’t need to install or configure tools like Webpack or Babel...
+On Create React App you don’t need to install or configure tools like Webpack or Babel...
 They are preconfigured and hidden so that you can focus just on the code!
 
 ## **Getting Started**
