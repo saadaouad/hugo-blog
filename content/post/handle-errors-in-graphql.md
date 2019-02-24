@@ -12,7 +12,7 @@ title: Handle and inspect errors in GraphQL network stack
 weight: 10
 ---
 
-In any application it's important to handle and inspect erros from server and client sides, since this can help a lot to debug and check what happened exactly on your app. Today we will see how we can handle errors in GraphQL especially from client side using <a href="https://www.apollographql.com/docs/react/" target="_blank">react apollo</a>.
+In any application it's important to handle and inspect erros from server and client sides, since this can help a lot to debug and check what happened exactly in your app. Today we will see how we can handle errors in GraphQL especially from client side using <a href="https://www.apollographql.com/docs/react/" target="_blank">react apollo</a>.
 
 When using Apollo Link, the best way to handle errors is to use `apollo-link-error` to handle Graphql, network and server errors:
 
