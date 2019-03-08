@@ -7,7 +7,7 @@ menu:
     parent: tutorials
 next: /tutorials/github-pages-blog
 prev: /tutorials/automated-deployments
-title: What is Redux
+title: What is Redux?
 description: Redux is a JavaScript library that aims to simplify how we manage stateful data.
 weight: 10
 ---
