@@ -68,36 +68,12 @@ Getting real is staying small and being agile.</description>
     </item>
     
     <item>
-      <title>What is Redux</title>
+      <title>What is Redux?</title>
       <link>https://saadaouad.net/post/what-is-redux/</link>
       <pubDate>Sun, 05 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://saadaouad.net/post/what-is-redux/</guid>
       <description>Redux is a JavaScript library that aims to manage stateful data. The state of your whole application is stored in a single JS object called store. A single function, the reducer, is responsible for making modifications to the store. We trigger the reducer by dispatching an action, a JS object that describes how our data should change. The reducer function receives the action as an argument and makes changes accordingly. Other parts of the code (usually React Components) can subscribe to data in the store.</description>
-    </item>
-    
-    <item>
-      <title>Create React App</title>
-      <link>https://saadaouad.net/post/create-react-app/</link>
-      <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://saadaouad.net/post/create-react-app/</guid>
-      <description>On Create React App you don’t need to install or configure tools like Webpack or Babel&amp;hellip; They are preconfigured and hidden so that you can focus just on the code!
-Getting Started Installation npm install -g create-react-app  or
-yarn global add create-react-app  Create app To create a new app make you sure to run
-create-react-app my-app cd my-app  Try to open the current folder in your editor, you should see the initial structure below.</description>
-    </item>
-    
-    <item>
-      <title>Go HUGO - Fast and flexible static site generator build with GoLang</title>
-      <link>https://saadaouad.net/post/go-hugo/</link>
-      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://saadaouad.net/post/go-hugo/</guid>
-      <description>Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
-Quick Start Step 1: Install Hugo  Homebrew, a package manager for macOS, can be installed from brew.sh. See install if you are running Windows etc.
- brew install hugo  Verify installation:
-hugo version  Step 2: Create a New Site Create a new Hugo site in a folder named GoHugo</description>
     </item>
     
     <item>
