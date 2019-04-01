@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Saad Aouad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://saadaouad.net/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Difference between undefined and null in Javascript</title>
+      <link>https://saadaouad.net/post/difference-between-undefined-and-null-in-javascript/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://saadaouad.net/post/difference-between-undefined-and-null-in-javascript/</guid>
+      <description> In Javascript undefined means a variable that has been declared but doesn&amp;rsquo;t have a value assigned, example:  var myVar; // gives undefined typeof myVar; // gives undefined   null is a primitive assigned value. it can be null, empty or non-existent value, example:  var myVar = null; // gives null typeof myVar; // gives object  </description>
+    </item>
     
     <item>
       <title>Handle and inspect errors in GraphQL network stack</title>

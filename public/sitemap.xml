@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://saadaouad.net/post/difference-between-undefined-and-null-in-javascript/</loc>
+    <lastmod>2019-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://saadaouad.net/post/handle-errors-in-graphql/</loc>
     <lastmod>2019-02-04T00:00:00+00:00</lastmod>
   </url>
@@ -38,11 +43,6 @@
   </url>
   
   <url>
-    <loc>https://saadaouad.net/resume/</loc>
-    <lastmod>2017-12-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://saadaouad.net/about/</loc>
     <lastmod>2015-06-20T14:02:37+02:00</lastmod>
   </url>
@@ -54,13 +54,13 @@
   
   <url>
     <loc>https://saadaouad.net/post/</loc>
-    <lastmod>2019-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://saadaouad.net/</loc>
-    <lastmod>2019-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -8,7 +8,7 @@
 		
 		
 		<meta name="generator" content="Hugo 0.53" />
-		<title>Never stop learning &middot; Saad Aouad</title>
+		<title>Difference between undefined and null in Javascript &middot; Saad Aouad</title>
 		<link rel="stylesheet" href="https://saadaouad.net/css/style.css">
 		<link rel="stylesheet" href="https://saadaouad.net/css/highlight.css">
 
@@ -39,11 +39,11 @@
             <article>
                 <header>
                     <h1>
-                        Never stop learning
+                        Difference between undefined and null in Javascript
                     </h1>
                     <h2 class="headline">
-                    Oct 2, 2017 00:00
-                    · 90 words
+                    Apr 1, 2019 00:00
+                    · 54 words
                     · 1 minute read
                       <span class="tags">
                       
@@ -52,14 +52,21 @@
                 </header>
                 
                 <section id="post-body">
-                    
+                    <ul>
+<li>In Javascript <code>undefined</code> means a variable that has been declared but doesn&rsquo;t have a value assigned, example:</li>
+</ul>
 
-<h3 id="never-stop-learning"><strong>Never stop learning</strong></h3>
+<pre><code>var myVar; // gives undefined
+typeof myVar; // gives undefined
+</code></pre>
 
-<p>They never show that, they never teach that in school, you get your degree and then you work from 9am to 5pm, you go to the home, No! Every good engineer, i guarantee you they go home, they work, they study, so that when it comes time to learn new things, they know all about it already.
-And that, to me, is my road to mastery for any sort of technology.</p>
+<ul>
+<li><code>null</code> is a primitive assigned value. it can be null, empty or non-existent value, example:</li>
+</ul>
 
-<p><strong><em>&ldquo;The more I learn, the more I realize how much I don&rsquo;t know.&rdquo;</em></strong> - Albert Einstein</p>
+<pre><code>var myVar = null; // gives null
+typeof myVar; // gives object
+</code></pre>
 
                 </section>
             </article>
