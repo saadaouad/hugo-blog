@@ -4,4 +4,5 @@ title: "About"
 hidden: true
 ---
 
-I'm Saad Aouad Front-end developer in modern day at <a href="https://www.barmej.com/" target="_blank" rel="noopener noreferrer">Barmej</a>, born and raised in Casablanca, Morocco. Passionate about the new technologies.
+I’m Saad Aouad twenty eight years old, born and raised in Casablanca Morocco.
+I’m a Front-end Engineer with more than 3 years of experience in web development. I’m working currently at <a href="https://www.joincoded.com" target="_blank" rel="noopener noreferrer">Coded</a>.

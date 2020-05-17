@@ -8,14 +8,14 @@ menu:
 next: /tutorials/github-pages-blog
 prev: /tutorials/automated-deployments
 title: Upload file using redux-form
-description: This example demonstrates how i can upload a file and update his value using redux-form
+description: In this example we will explain how to upload a file using redux-form
 
 weight: 10
 ---
 
-This example demonstrates how i can upload a file and update his value using `redux-form`.
+In this example we will explain how to upload a file using `redux-form`.
 
-If you've setting up `redux-form` with an input `type="file"`, you should have encountered a browser error like the following error on Chrome:
+If you've setting up `redux-form` with an input `type="file"`, you should have encountered with an error like this:
 
 ```
 Uncaught DOMException: Failed to set the 'value' property on 'HTMLInputElement': 
@@ -23,7 +23,7 @@ This input element accepts a filename, which may only be programmatically set to
 ```
 For a security reasons, input with `type="file"` don't support setting the value property programmatically, ref https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#File_inputs.
 
-For handle this warning, it's necessary to set the input value to `null` or remove it to prevent React from trying to set the `value` property on the DOM Input Element:
+To handle this warning, it's necessary to set the input value to `null` or remove it to prevent React from trying to set the `value` property on the DOM Input Element:
 
 ```
 import React from 'react';
@@ -33,13 +33,12 @@ import { Field, reduxForm } from 'redux-form';
 // ...
 ```
 
-Now we can update the value of `picture` field using method `PATCH`, so let’s start with implement an action redux for this case:
+Now we can update the value of `picture` field using method `PATCH`. So let’s start with implement a redux action for that:
 
-**FYI**: Make you sure to using `multipart/form-data` as a content type, ref https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects 
-
-`updatePicture.js`
 ```
-export const updateUserProfile = values => dispatch => {
+// updatePicture.js
+
+export const updatePicture = values => dispatch => {
   const data = new FormData();
 
   // Don't send the data until a file has been loaded
@@ -49,27 +48,27 @@ export const updateUserProfile = values => dispatch => {
 
   dispatch({
     types: [
-      'UPDATE_USER_PICTURE_REQUEST',
-      'UPDATE_USER_PICTURE_SUCCESS',
-      'UPDATE_USER_PICTURE_FAILURE',
+      'UPDATE_PICTURE_REQUEST',
+      'UPDATE_PICTURE_SUCCESS',
+      'UPDATE_PICTURE_FAILURE',
     ],
     config: {
-      // Make you sure to use your exact endpoint
-      url: 'http://example.com/users/',
+      url: 'http://example.com/update-picture/',
       method: 'PATCH',
       data,
     },
     callback: (success, response) => {
-      // ...
+      // add your callback code
     },
   });
 };
 ```
 
-Then you can dispatch your action after implement your simple own reducer:
+Then you can dispatch your action after implementing your simple own reducer:
 
-`submit.js`
 ```
+// submit.js
+
 import {updatePicture} from './updatePicture';
 
 export default (values, dispatch) => {

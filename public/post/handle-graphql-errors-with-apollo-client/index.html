@@ -8,7 +8,7 @@
 		
 		
 		<meta name="generator" content="Hugo 0.55.3" />
-		<title>Upload file using redux-form &middot; Saad Aouad</title>
+		<title>Handle GraphQL errors with Apollo Client &middot; Saad Aouad</title>
 		<link rel="stylesheet" href="https://saadaouad.net/css/style.css">
 		<link rel="stylesheet" href="https://saadaouad.net/css/highlight.css">
 
@@ -39,11 +39,11 @@
             <article>
                 <header>
                     <h1>
-                        Upload file using redux-form
+                        Handle GraphQL errors with Apollo Client
                     </h1>
                     <h2 class="headline">
-                    May 8, 2018 00:00
-                    · 241 words
+                    Feb 4, 2019 00:00
+                    · 214 words
                     · 2 minute read
                       <span class="tags">
                       
@@ -52,65 +52,43 @@
                 </header>
                 
                 <section id="post-body">
-                    <p>In this example we will explain how to upload a file using <code>redux-form</code>.</p>
+                    <p>In any application it&rsquo;s important to handle and inspect erros since this helps a lot to debug and check what happened exactly in your application. Today we will see how to handle GraphQL errors with Apollo Client.</p>
 
-<p>If you&rsquo;ve setting up <code>redux-form</code> with an input <code>type=&quot;file&quot;</code>, you should have encountered with an error like this:</p>
+<p>When using Apollo Link, the ability to handle network errors is way more powerful. The best way to do this is to use the <code>apollo-link-error</code> to catch and handle server, network and GraphQL errors. Here is a custom logic to do in your Apollo Provider file when a GraphQL or network error happens:</p>
 
-<pre><code>Uncaught DOMException: Failed to set the 'value' property on 'HTMLInputElement': 
-This input element accepts a filename, which may only be programmatically set to the empty string.
+<pre><code>// ApolloProvider.js
+import {ApolloLink} from 'apollo-link';
+import { onError } from &quot;apollo-link-error&quot;;
+import {createHttpLink} from 'apollo-link-http';
+import {InMemoryCache} from 'apollo-cache-inmemory';
+
+// networkError: This refer any error during the link execution or server response
+// graphQLErrors: Is an array of errors from the GraphQL endpoint
+const errorLink = onError(({networkError, graphQLErrors}) =&gt; {
+    if (graphQLErrors) {
+        graphQLErrors.map(({message, locations, path}) =&gt;
+            console.log(`[GraphQL error]: Message: ${message}, Location: ${locations}, Path: ${path}`);
+        );
+    }
+
+    if (networkError)
+        console.log(`[Network error]: ${networkError}`);
+    });
+
+    const httpLink = createHttpLink({
+        uri: YOUR_GRAPHQL_ENDPOINT,
+    });
+
+    const link = ApolloLink.from([errorLink, httpLink]);
+
+    client = new ApolloClient({
+        cache: new InMemoryCache(),
+        link,
+    })
+});
 </code></pre>
 
-<p>For a security reasons, input with <code>type=&quot;file&quot;</code> don&rsquo;t support setting the value property programmatically, ref <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#File_inputs">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#File_inputs</a>.</p>
-
-<p>To handle this warning, it&rsquo;s necessary to set the input value to <code>null</code> or remove it to prevent React from trying to set the <code>value</code> property on the DOM Input Element:</p>
-
-<pre><code>import React from 'react';
-import { Field, reduxForm } from 'redux-form';
-// ...
-&lt;Field name=&quot;picture&quot; component=&quot;input&quot; type=&quot;file&quot; value={null} /&gt;
-// ...
-</code></pre>
-
-<p>Now we can update the value of <code>picture</code> field using method <code>PATCH</code>. So let’s start with implement a redux action for that:</p>
-
-<pre><code>// updatePicture.js
-
-export const updatePicture = values =&gt; dispatch =&gt; {
-  const data = new FormData();
-
-  // Don't send the data until a file has been loaded
-  if (typeof values.picture !== 'string' &amp;&amp; values.picture !== null) {
-    data.append('picture', values.picture[0]);
-  }
-
-  dispatch({
-    types: [
-      'UPDATE_PICTURE_REQUEST',
-      'UPDATE_PICTURE_SUCCESS',
-      'UPDATE_PICTURE_FAILURE',
-    ],
-    config: {
-      url: 'http://example.com/update-picture/',
-      method: 'PATCH',
-      data,
-    },
-    callback: (success, response) =&gt; {
-      // add your callback code
-    },
-  });
-};
-</code></pre>
-
-<p>Then you can dispatch your action after implementing your simple own reducer:</p>
-
-<pre><code>// submit.js
-
-import {updatePicture} from './updatePicture';
-
-export default (values, dispatch) =&gt; {
-  dispatch(updatePicture(values));
-};
-</code></pre>
+<p>By the way if you are enthusiastic to know how you can handle GraphQL errors from server side as well, here is a good reference for it <a href="https://blog.apollographql.com/full-stack-error-handling-with-graphql-apollo-5c12da407210">https://blog.apollographql.com/full-stack-error-handling-with-graphql-apollo-5c12da407210</a></p>
 
                 </section>
             </article>

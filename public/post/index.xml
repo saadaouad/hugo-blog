@@ -21,24 +21,13 @@
     </item>
     
     <item>
-      <title>Handle and inspect errors in GraphQL network stack</title>
-      <link>https://saadaouad.net/post/handle-errors-in-graphql/</link>
+      <title>Handle GraphQL errors with Apollo Client</title>
+      <link>https://saadaouad.net/post/handle-graphql-errors-with-apollo-client/</link>
       <pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://saadaouad.net/post/handle-errors-in-graphql/</guid>
-      <description>In any application it&amp;rsquo;s important to handle and inspect erros from server and client sides, since this can help a lot to debug and check what happened exactly in your app. Today we will see how we can handle errors in GraphQL especially from client side using react apollo.
-When using Apollo Link, the best way to handle errors is to use apollo-link-error to handle Graphql, network and server errors:</description>
-    </item>
-    
-    <item>
-      <title>Allowing access to all Disqus resources</title>
-      <link>https://saadaouad.net/post/allowing-access-to-all-disqus-resources/</link>
-      <pubDate>Mon, 06 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://saadaouad.net/post/allowing-access-to-all-disqus-resources/</guid>
-      <description>In this post we will see how we can allowing access to all Disqus resources when you have a Content Security Policy header in your web application.
-To have a secured web application, you have to add some HTTP headers with security policies, ref https://content-security-policy.com/.
-And if you are using Disqus in your web application, Disqus will not be loaded when your app it&amp;rsquo;s deployed and you should see an error in the console like:</description>
+      <guid>https://saadaouad.net/post/handle-graphql-errors-with-apollo-client/</guid>
+      <description>In any application it&amp;rsquo;s important to handle and inspect erros since this helps a lot to debug and check what happened exactly in your application. Today we will see how to handle GraphQL errors with Apollo Client.
+When using Apollo Link, the ability to handle network errors is way more powerful. The best way to do this is to use the apollo-link-error to catch and handle server, network and GraphQL errors.</description>
     </item>
     
     <item>
@@ -47,8 +36,8 @@ And if you are using Disqus in your web application, Disqus will not be loaded w
       <pubDate>Tue, 08 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://saadaouad.net/post/upload-file-using-redux-form/</guid>
-      <description>This example demonstrates how i can upload a file and update his value using redux-form.
-If you&amp;rsquo;ve setting up redux-form with an input type=&amp;quot;file&amp;quot;, you should have encountered a browser error like the following error on Chrome:
+      <description>In this example we will explain how to upload a file using redux-form.
+If you&amp;rsquo;ve setting up redux-form with an input type=&amp;quot;file&amp;quot;, you should have encountered with an error like this:
 Uncaught DOMException: Failed to set the &#39;value&#39; property on &#39;HTMLInputElement&#39;: This input element accepts a filename, which may only be programmatically set to the empty string.  For a security reasons, input with type=&amp;quot;file&amp;quot; don&amp;rsquo;t support setting the value property programmatically, ref https://developer.</description>
     </item>
     
@@ -83,15 +72,6 @@ Getting real is staying small and being agile.</description>
       
       <guid>https://saadaouad.net/post/what-is-redux/</guid>
       <description>Redux is a JavaScript library that aims to manage stateful data. The state of your whole application is stored in a single JS object called store. A single function, the reducer, is responsible for making modifications to the store. We trigger the reducer by dispatching an action, a JS object that describes how our data should change. The reducer function receives the action as an argument and makes changes accordingly. Other parts of the code (usually React Components) can subscribe to data in the store.</description>
-    </item>
-    
-    <item>
-      <title>Never stop learning</title>
-      <link>https://saadaouad.net/post/never-stop-learning/</link>
-      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://saadaouad.net/post/never-stop-learning/</guid>
-      <description>Never stop learning They never show that, they never teach that in school, you get your degree and then you work from 9am to 5pm, you go to the home&amp;hellip; No! Every good engineer I guarantee you they go home they work they study so that when it comes time to learn new things they know all about it already. And that to me is my road to mastery for any sort of technology.</description>
     </item>
     
   </channel>
