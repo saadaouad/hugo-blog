@@ -1,6 +1,6 @@
 ---
 author: "Saad Aouad"
-date: 2020-05-19
+date: 2020-05-18
 linktitle: Comparison with the equality (==) and strict equality (===) operator in Javascript
 menu:
   main:

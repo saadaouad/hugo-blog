@@ -12,9 +12,19 @@
     
     
     <item>
+      <title>Return early pattern for functions</title>
+      <link>https://saadaouad.net/post/return-early-pattern-for-functions/</link>
+      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://saadaouad.net/post/return-early-pattern-for-functions/</guid>
+      <description>When a first return statement is reached, the execution of the current function stops and control returns to the calling location. Example:
+function myFunc() { console.log(&amp;quot;Salam alaykum&amp;quot;); return &amp;quot;Wa alaykum salam&amp;quot;; console.log(&amp;quot;Ciao&amp;quot;); } myFunc();  The output &amp;ldquo;Salam alaykum&amp;rdquo; to the console, returns &amp;ldquo;Wa alaykum salam&amp;rdquo;, but &amp;ldquo;Ciao&amp;rdquo; is never output, because the function exits at the first return statement.</description>
+    </item>
+    
+    <item>
       <title>Comparison with the equality (==) and strict equality (===) operator in Javascript</title>
       <link>https://saadaouad.net/post/comparison-with-the-equality-and-strict-equality-operator-in-js/</link>
-      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://saadaouad.net/post/comparison-with-the-equality-and-strict-equality-operator-in-js/</guid>
       <description>If the values being compared are not of the same type, the equality operator will perform a type conversion, and then evaluate the values. however, the strict equality operator will compare both the data type and values as-is, without converting one type to the other. Example:
