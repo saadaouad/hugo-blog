@@ -6,10 +6,20 @@
     <description>Recent content on Saad Aouad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://saadaouad.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Comparison with the equality (==) and strict equality (===) operator in Javascript</title>
+      <link>https://saadaouad.net/post/comparison-with-the-equality-and-strict-equality-operator-in-js/</link>
+      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://saadaouad.net/post/comparison-with-the-equality-and-strict-equality-operator-in-js/</guid>
+      <description>If the values being compared are not of the same type, the equality operator will perform a type conversion, and then evaluate the values. however, the strict equality operator will compare both the data type and values as-is, without converting one type to the other. Example:
+1 == &amp;quot;1&amp;quot; // returns true, because Javascript performs type conversion from string to number. 1 === &amp;quot;1&amp;quot; // returns false, because the types are different and type conversion is not performed.</description>
+    </item>
     
     <item>
       <title>Difference between undefined and null in Javascript</title>

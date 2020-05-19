@@ -1,4 +1,4 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-us">
 	<head>
 		<meta charset="utf-8">
@@ -8,7 +8,7 @@
 		
 		
 		<meta name="generator" content="Hugo 0.55.3" />
-		<title>404 Page not found &middot; Saad Aouad</title>
+		<title>Comparison with the equality (==) and strict equality (===) operator in Javascript &middot; Saad Aouad</title>
 		<link rel="stylesheet" href="https://saadaouad.net/css/style.css">
 		<link rel="stylesheet" href="https://saadaouad.net/css/highlight.css">
 
@@ -21,8 +21,8 @@
 		
 	</head>
 
-	<body>
-    <nav class="main-nav">
+    <body>
+       <nav class="main-nav">
 	
 	
 		<a href='https://saadaouad.net/'> <span class="arrow">←</span>Posts</a>
@@ -35,52 +35,39 @@
 </nav>
 
 
-    <section id="wrapper" class="home">
-        <article class="post">
-            <header>
-                <h1>404 - Page not found</h1>
-                <h3>The content you're looking for doesn't seem to exist.</h3>
-            </header>
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        Comparison with the equality (==) and strict equality (===) operator in Javascript
+                    </h1>
+                    <h2 class="headline">
+                    May 19, 2020 00:00
+                    · 78 words
+                    · 1 minute read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    <p>If the values being compared are not of the same type, the equality operator will perform a type conversion, and then evaluate the values. however, the strict equality operator will compare both the data type and values as-is, without converting one type to the other. Example:</p>
 
-            <ul id="post-list" class="archive readmore">
-    <h3>Read more</h3>
+<pre><code>1 == &quot;1&quot; // returns true, because Javascript performs type conversion from string to number.
+1 === &quot;1&quot; // returns false, because the types are different and type conversion is not performed.
+</code></pre>
 
-    
-    
-    
-        <li>
-            <a href="/post/comparison-with-the-equality-and-strict-equality-operator-in-js/">Comparison with the equality (==) and strict equality (===) operator in Javascript<aside class="dates">May 19 2020</aside></a>
-        </li>
-    
-        <li>
-            <a href="/post/difference-between-undefined-and-null-in-javascript/">Difference between undefined and null in Javascript<aside class="dates">Apr 1 2019</aside></a>
-        </li>
-    
-        <li>
-            <a href="/post/handle-graphql-errors-with-apollo-client/">Handle GraphQL errors with Apollo Client<aside class="dates">Feb 4 2019</aside></a>
-        </li>
-    
-        <li>
-            <a href="/post/upload-file-using-redux-form/">Upload file using redux-form<aside class="dates">May 8 2018</aside></a>
-        </li>
-    
-        <li>
-            <a href="/post/reset-redux-store/">Reset Redux Store<aside class="dates">Feb 26 2018</aside></a>
-        </li>
-    
-        <li>
-            <a href="/post/getting-real/">Want to build a successful web app?<aside class="dates">Dec 24 2017</aside></a>
-        </li>
-    
-        <li>
-            <a href="/post/what-is-redux/">What is Redux<aside class="dates">Nov 5 2017</aside></a>
-        </li>
-    
-</ul>
+                </section>
+            </article>
 
-        </article>
+            
 
-        <footer id="footer">
+            
+
+            
+
+            <footer id="footer">
     
         <div id="social">
 
@@ -117,6 +104,18 @@
     </p>
 </footer>
 
-    </section>
+        </section>
+
+        <script src="https://saadaouad.net/js/jquery-3.3.1.min.js"></script>
+<script src="https://saadaouad.net/js/main.js"></script>
+<script src="https://saadaouad.net/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
     </body>
 </html>
