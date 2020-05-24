@@ -1,6 +1,6 @@
 ---
 author: "Saad Aouad"
-date: 2020-05-19
+date: 2017-12-19
 linktitle: Return early pattern for functions
 menu:
   main:

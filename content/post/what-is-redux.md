@@ -1,6 +1,6 @@
 ---
 author: "Saad Aouad"
-date: 2017-11-05
+date: 2018-01-05
 linktitle: What is Redux
 menu:
   main:

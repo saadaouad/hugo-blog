@@ -3,16 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://saadaouad.net/post/return-early-pattern-for-functions/</loc>
-    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://saadaouad.net/post/comparison-with-the-equality-and-strict-equality-operator-in-js/</loc>
-    <lastmod>2020-05-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://saadaouad.net/post/difference-between-undefined-and-null-in-javascript/</loc>
     <lastmod>2019-04-01T00:00:00+00:00</lastmod>
   </url>
@@ -33,24 +23,34 @@
   </url>
   
   <url>
-    <loc>https://saadaouad.net/post/getting-real/</loc>
-    <lastmod>2017-12-24T00:00:00+00:00</lastmod>
+    <loc>https://saadaouad.net/post/what-is-redux/</loc>
+    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://saadaouad.net/post/what-is-redux/</loc>
-    <lastmod>2017-11-05T00:00:00+00:00</lastmod>
+    <loc>https://saadaouad.net/post/return-early-pattern-for-functions/</loc>
+    <lastmod>2017-12-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://saadaouad.net/post/comparison-with-the-equality-and-strict-equality-operator-in-js/</loc>
+    <lastmod>2017-11-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://saadaouad.net/post/getting-real/</loc>
+    <lastmod>2017-10-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://saadaouad.net/post/</loc>
-    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://saadaouad.net/</loc>
-    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
