@@ -6,24 +6,25 @@
     <description>Recent content on Saad Aouad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://saadaouad.net/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Difference between undefined and null in Javascript</title>
-      <link>https://saadaouad.net/post/difference-between-undefined-and-null-in-javascript/</link>
-      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      <title>Difference between var, let and const keywords</title>
+      <link>https://saadaouad.net/post/difference-between-var-let-const-keywords/</link>
+      <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://saadaouad.net/post/difference-between-undefined-and-null-in-javascript/</guid>
-      <description> In Javascript undefined means a variable that has been declared but doesn&amp;rsquo;t have a value assigned, example:  var myVar; // gives undefined typeof myVar; // gives undefined   null is a primitive assigned value. it can be null, empty or non-existent value, example:  var myVar = null; // gives null typeof myVar; // gives object  </description>
+      <guid>https://saadaouad.net/post/difference-between-var-let-const-keywords/</guid>
+      <description>ES6 introduced two new ways to create variables, let and const. But before we actually dive into the differences between var, let and const, there is a prerequisite you need to know first. It’s scope (specifically function scope).
+Scope Scope defines where variables and functions are accessible inside of your program. In JavaScript, there are two kinds of scope - global scope, and function scope. According to the official spec,</description>
     </item>
     
     <item>
       <title>Handle GraphQL errors with Apollo Client</title>
       <link>https://saadaouad.net/post/handle-graphql-errors-with-apollo-client/</link>
-      <pubDate>Mon, 04 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://saadaouad.net/post/handle-graphql-errors-with-apollo-client/</guid>
       <description>In any application it&amp;rsquo;s important to handle and inspect erros since this helps a lot to debug and check what happened exactly in your application. Today we will see how to handle GraphQL errors with Apollo Client.
@@ -63,9 +64,18 @@ const todoApp = combineReducers({ /* your app’s top-level reducers */ }) const
     </item>
     
     <item>
+      <title>Difference between undefined and null in Javascript</title>
+      <link>https://saadaouad.net/post/difference-between-undefined-and-null-in-javascript/</link>
+      <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://saadaouad.net/post/difference-between-undefined-and-null-in-javascript/</guid>
+      <description> In Javascript undefined means a variable that has been declared but doesn&amp;rsquo;t have a value assigned, example:  var myVar; // gives undefined typeof myVar; // gives undefined   null is a primitive assigned value. it can be null, empty or non-existent value, example:  var myVar = null; // gives null typeof myVar; // gives object  </description>
+    </item>
+    
+    <item>
       <title>Return early pattern for functions</title>
       <link>https://saadaouad.net/post/return-early-pattern-for-functions/</link>
-      <pubDate>Tue, 19 Dec 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://saadaouad.net/post/return-early-pattern-for-functions/</guid>
       <description>When a first return statement is reached, the execution of the current function stops and control returns to the calling location. Example:

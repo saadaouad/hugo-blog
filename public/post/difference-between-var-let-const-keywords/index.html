@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		
+		<meta name="generator" content="Hugo 0.55.3" />
+		<title>Difference between var, let and const keywords &middot; Saad Aouad</title>
+		<link rel="stylesheet" href="https://saadaouad.net/css/style.css">
+		<link rel="stylesheet" href="https://saadaouad.net/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="https://saadaouad.net/css/font-awesome.min.css">
+		
+
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://saadaouad.net/'> <span class="arrow">←</span>Posts</a>
+	
+	<a href='https://saadaouad.net/about'>About</a>
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        Difference between var, let and const keywords
+                    </h1>
+                    <h2 class="headline">
+                    Sep 15, 2020 00:00
+                    · 692 words
+                    · 4 minute read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    
+
+<p>ES6 introduced two new ways to create variables, <code>let</code> and <code>const</code>. But before we actually dive into the differences between <code>var</code>, <code>let</code> and <code>const</code>, there is a prerequisite you need to know first. It’s scope (specifically function scope).</p>
+
+<h4 id="scope">Scope</h4>
+
+<p>Scope defines where variables and functions are accessible inside of your program. In JavaScript, there are two kinds of scope - <strong>global scope</strong>, and <strong>function scope</strong>. According to the official spec,</p>
+
+<blockquote>
+<p>“If the variable statement occurs inside a FunctionDeclaration, the variables are defined with function-local scope in that function.”.</p>
+</blockquote>
+
+<p>That means If you create a variable with <code>var</code>, that variable is “scoped” to the function it was created in and is only accessible inside of that function or, any nested functions.</p>
+
+<pre><code>function addSum(num) {
+  var sum = 3;
+
+  return sum = sum + num;
+}
+
+addSum(2);
+console.log(sum); // ❌ Reference Error
+</code></pre>
+
+<p>As you can see we try to access a variable outside of <code>addSum()</code> function it was declared. Since <code>sum</code> is scoped to <code>addSum()</code> function it’s only accessible inside of this function itself or any nested function inside <code>addSum()</code>. e.g:</p>
+
+<pre><code>function addSum(num) {
+  var sum = &quot;3&quot;; 
+
+  function numberSum() {
+    return  sum =  parseInt(sum) + num; // ✅
+  }
+
+  return numberSum();
+}
+
+addSum(2);
+console.log(sum); // ❌ Reference Error
+</code></pre>
+
+<h3 id="var-vs-let">var VS let</h3>
+
+<p>Now, let’s compare <code>var</code> and <code>let</code>. The main difference between <code>var</code> and <code>let</code> is that instead of being function scoped, what that means is that a variable created with the <code>let</code> keyword is available inside the “block” that it was created in as well as any nested block. When I say “block”, I mean anything surrounded by a curly brace <code>{}</code> like <code>if</code> statement or  <code>for</code> loop.</p>
+
+<p>Let’s look to <code>discountPrices()</code> function:</p>
+
+<pre><code>function discountPrices (prices, discount) {
+  var discounted = []
+
+  for (var i = 0; i &lt; prices.length; i++) {
+    var discountedPrice = prices[i] * (1 - discount)
+    var finalPrice = Math.round(discountedPrice * 100) / 100
+    discounted.push(finalPrice)
+  }
+
+  console.log(i) // 3
+  console.log(discountedPrice) // 150
+  console.log(finalPrice) // 150
+  return discounted
+}
+</code></pre>
+
+<p>Remember that we were able to log <code>i</code>, <code>discountedPrice</code> and <code>finalPrice</code> outside of the <code>for</code> loop since they were declared with <code>var</code> and <code>var</code> is function scoped. But now, what happens if we change those <code>var</code> declarations to use <code>let</code> and try to run it?</p>
+
+<pre><code>function discountPrices (prices, discount) {
+  let discounted = []
+
+  for (let i = 0; i &lt; prices.length; i++) {
+    let discountedPrice = prices[i] * (1 - discount)
+    let finalPrice = Math.round(discountedPrice * 100) / 100
+    discounted.push(finalPrice)
+  }
+
+  console.log(i)
+  console.log(discountedPrice)
+  console.log(finalPrice)
+  return discounted
+}
+
+discountPrices([100, 200, 300], .5) // ❌ ReferenceError: i is not defined
+</code></pre>
+
+<p>We get <code>ReferenceError: i is not defined</code>. What this tells us is that variables declared with let are block scoped, not function scoped. So trying to access i (or discountedPrice or
+finalPrice) outside of the “block” they were declared in is going to give us a reference error as we just barely saw.</p>
+
+<pre><code>var VS let
+
+var: function scoped
+
+let: block scoped
+</code></pre>
+
+<p>The next difference has to do with Hoisting. When you try to access a variable using <code>var</code> keyword you will get <code>undefined</code>:</p>
+
+<pre><code>function discountPrices (prices, discount) {
+  console.log(discounted) // undefined
+  var discounted = []
+…
+</code></pre>
+
+<p>And when you try to access a variable using <code>let</code> keyword, you’ll get a <code>ReferenceError</code>:</p>
+
+<pre><code>function discountPrices (prices, discount) {
+  console.log(discounted) // ❌ ReferenceError
+  let discounted = []
+…
+</code></pre>
+
+<pre><code>var VS let
+
+var:
+  function scoped
+  undefined when accessing a variable before it's declared
+
+let:
+  block scoped
+  ReferenceError when accessing a variable before it's declared
+</code></pre>
+
+<h3 id="let-vs-const">let VS const</h3>
+
+<p>Now that you understand the difference between <code>var</code> and <code>let</code>, <code>const</code> is almost exactly the same as <code>let</code>. However, the only difference is that once you’ve assigned a value to a variable using <code>const</code>, you can’t reassign it to a new value. Example:</p>
+
+<pre><code>let name = 'Tyler'
+const handle = 'tylermcginnis'
+
+name = 'Tyler McGinnis' // ✅
+handle = '@tylermcginnis' // ❌ TypeError: Assignment to constant variable.
+</code></pre>
+
+<pre><code>var VS let VS const
+
+var:
+  function scoped
+  undefined when accessing a variable before it's declared
+
+let:
+  block scoped
+  ReferenceError when accessing a variable before it's declared
+
+const:
+  block scoped
+  ReferenceError when accessing a variable before it's declared
+  can't be reassigned
+</code></pre>
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://web.facebook.com/saad.aouad" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-facebook-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://github.com/saadaouad" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.linkedin.com/in/saad-aouad-919897b5/" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-linkedin-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://twitter.com/AouadSaad" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2020
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>, Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus" target="_blank" rel="noopener noreferrer">nodejh</a>, Hosted on <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer">Firebase</a> and source code is hosted on <a href="https://github.com/saadaouad/hugo-blog" target="_blank" rel="noopener noreferrer">Github</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://saadaouad.net/js/jquery-3.3.1.min.js"></script>
+<script src="https://saadaouad.net/js/main.js"></script>
+<script src="https://saadaouad.net/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>

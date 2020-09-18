@@ -1,6 +1,6 @@
 ---
 author: "Saad Aouad"
-date: 2019-04-01
+date: 2017-12-12
 linktitle: Difference between undefined and null in Javascript
 menu:
   main:

@@ -3,13 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://saadaouad.net/post/difference-between-undefined-and-null-in-javascript/</loc>
-    <lastmod>2019-04-01T00:00:00+00:00</lastmod>
+    <loc>https://saadaouad.net/post/difference-between-var-let-const-keywords/</loc>
+    <lastmod>2020-09-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://saadaouad.net/post/handle-graphql-errors-with-apollo-client/</loc>
-    <lastmod>2019-02-04T00:00:00+00:00</lastmod>
+    <lastmod>2019-08-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -28,8 +28,13 @@
   </url>
   
   <url>
+    <loc>https://saadaouad.net/post/difference-between-undefined-and-null-in-javascript/</loc>
+    <lastmod>2017-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://saadaouad.net/post/return-early-pattern-for-functions/</loc>
-    <lastmod>2017-12-19T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -44,13 +49,13 @@
   
   <url>
     <loc>https://saadaouad.net/post/</loc>
-    <lastmod>2019-04-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-09-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://saadaouad.net/</loc>
-    <lastmod>2019-04-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-09-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

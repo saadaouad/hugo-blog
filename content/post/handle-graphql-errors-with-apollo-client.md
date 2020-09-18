@@ -1,6 +1,6 @@
 ---
 author: "Saad Aouad"
-date: 2019-02-04
+date: 2019-08-04
 linktitle: Handle GraphQL errors with Apollo Client
 menu:
   main:
