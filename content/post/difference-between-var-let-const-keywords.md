@@ -140,11 +140,11 @@ let:
 Now that you understand the difference between `var` and `let`, `const` is almost exactly the same as `let`. However, the only difference is that once you’ve assigned a value to a variable using `const`, you can’t reassign it to a new value. Example:
 
 ```
-let name = 'Tyler'
-const handle = 'tylermcginnis'
+let name = 'Saad'
+const currentPosition = 'Front-End Engineer'
 
-name = 'Tyler McGinnis' // ✅
-handle = '@tylermcginnis' // ❌ TypeError: Assignment to constant variable.
+name = 'Saad Aouad' // ✅
+currentPosition = 'Software Engineer' // ❌ TypeError: Assignment to constant variable.
 ```
 
 ```
@@ -163,3 +163,5 @@ const:
   ReferenceError when accessing a variable before it's declared
   can't be reassigned
 ```
+
+***Ref*** <a href="https://ui.dev/var-let-const/" target="_blank" rel="noopener noreferrer">ui.dev/var-let-const/</a>

@@ -48,3 +48,5 @@ const rootReducer = (state, action) => {
   return todoApp(state, action)
 }
 ```
+
+***Ref*** <a href="https://stackoverflow.com/a/35641992" target="_blank" rel="noopener noreferrer">stackoverflow.com/a/35641992</a>

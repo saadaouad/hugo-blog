@@ -39,7 +39,7 @@ When using Apollo Link, the ability to handle network errors is way more powerfu
       <guid>https://saadaouad.net/post/upload-file-using-redux-form/</guid>
       <description>In this example we will explain how to upload a file using redux-form.
 If you&amp;rsquo;ve setting up redux-form with an input type=&amp;quot;file&amp;quot;, you should have encountered with an error like this:
-Uncaught DOMException: Failed to set the &#39;value&#39; property on &#39;HTMLInputElement&#39;: This input element accepts a filename, which may only be programmatically set to the empty string.  For a security reasons, input with type=&amp;quot;file&amp;quot; don&amp;rsquo;t support setting the value property programmatically, ref https://developer.</description>
+Uncaught DOMException: Failed to set the &#39;value&#39; property on &#39;HTMLInputElement&#39;: This input element accepts a filename, which may only be programmatically set to the empty string.  For a security reasons, input with type=&amp;quot;file&amp;quot; don&amp;rsquo;t support setting the value property programmatically, ref developer.</description>
     </item>
     
     <item>
@@ -79,7 +79,8 @@ const todoApp = combineReducers({ /* your app’s top-level reducers */ }) const
       
       <guid>https://saadaouad.net/post/return-early-pattern-for-functions/</guid>
       <description>When a first return statement is reached, the execution of the current function stops and control returns to the calling location. Example:
-function myFunc() { console.log(&amp;quot;Salam alaykum&amp;quot;); return &amp;quot;Wa alaykum salam&amp;quot;; console.log(&amp;quot;Ciao&amp;quot;); } myFunc();  The output &amp;ldquo;Salam alaykum&amp;rdquo; to the console, returns &amp;ldquo;Wa alaykum salam&amp;rdquo;, but &amp;ldquo;Ciao&amp;rdquo; is never output, because the function exits at the first return statement.</description>
+function myFunc() { console.log(&amp;quot;Salam alaykum&amp;quot;); return &amp;quot;Wa alaykum salam&amp;quot;; console.log(&amp;quot;Ciao&amp;quot;); } myFunc();  The output &amp;ldquo;Salam alaykum&amp;rdquo; to the console, returns &amp;ldquo;Wa alaykum salam&amp;rdquo;, but &amp;ldquo;Ciao&amp;rdquo; is never output, because the function exits at the first return statement.
+Ref freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/return-early-pattern-for-functions</description>
     </item>
     
     <item>

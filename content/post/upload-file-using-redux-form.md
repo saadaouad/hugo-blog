@@ -21,7 +21,7 @@ If you've setting up `redux-form` with an input `type="file"`, you should have e
 Uncaught DOMException: Failed to set the 'value' property on 'HTMLInputElement': 
 This input element accepts a filename, which may only be programmatically set to the empty string.
 ```
-For a security reasons, input with `type="file"` don't support setting the value property programmatically, ref https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#File_inputs.
+For a security reasons, input with `type="file"` don't support setting the value property programmatically, ref <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#File_inputs" target="_blank" rel="noopener noreferrer">developer.mozilla.org/en-US/docs/Web/HTML/Element/input#File_inputs</a>.
 
 To handle this warning, it's necessary to set the input value to `null` or remove it to prevent React from trying to set the `value` property on the DOM Input Element:
 

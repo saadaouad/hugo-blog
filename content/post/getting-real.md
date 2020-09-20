@@ -26,4 +26,4 @@ Getting real is about iterations and lowering the cost of change. Getting real i
 
 Getting real delivers just what customers need and eliminates anything they don't.
 
-***Source*** [getreal.37signals.com](https://getreal.37signals.com)
+***Source*** <a href="https://getreal.37signals.com" target="_blank" rel="noopener noreferrer">getreal.37signals.com</a>

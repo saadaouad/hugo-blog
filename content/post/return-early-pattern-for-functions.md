@@ -25,3 +25,5 @@ myFunc();
 ```
 
 The output "Salam alaykum" to the console, returns "Wa alaykum salam", but "Ciao" is never output, because the function exits at the first return statement.
+
+***Ref*** <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/return-early-pattern-for-functions" target="_blank" rel="noopener noreferrer">freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/return-early-pattern-for-functions</a>

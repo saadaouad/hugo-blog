@@ -49,4 +49,4 @@ const errorLink = onError(({networkError, graphQLErrors}) => {
 });
 ```
 
-By the way if you are enthusiastic to know how you can handle GraphQL errors from server side as well, here is a good reference for it https://blog.apollographql.com/full-stack-error-handling-with-graphql-apollo-5c12da407210
+By the way if you are enthusiastic to know how you can handle GraphQL errors from server side as well, here is a good reference for it <a href="https://blog.apollographql.com/full-stack-error-handling-with-graphql-apollo-5c12da407210" target="_blank" rel="noopener noreferrer">blog.apollographql.com/full-stack-error-handling-with-graphql-apollo-5c12da407210</a>

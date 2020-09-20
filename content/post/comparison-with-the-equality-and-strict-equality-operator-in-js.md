@@ -18,3 +18,8 @@ If the values being compared are not of the same type, the equality operator wil
 1 == "1" // returns true, because Javascript performs type conversion from string to number.
 1 === "1" // returns false, because the types are different and type conversion is not performed.
 ```
+
+***Ref***: 
+
+- <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-strict-equality-operator" target="_blank" rel="noopener noreferrer">freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comparison-with-the-strict-equality-operator</a>
+- <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/practice-comparing-different-values" target="_blank" rel="noopener noreferrer">freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/practice-comparing-different-values</a>
